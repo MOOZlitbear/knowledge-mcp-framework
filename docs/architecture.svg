@@ -92,15 +92,15 @@
     <path d="M840 300 C 870 300, 870 300, 898 300"/>
   </g>
   <g stroke="#0f766e" stroke-width="1.5" fill="none" marker-end="url(#arrow-teal)" stroke-dasharray="5 4">
-    <path d="M865 465 L865 342"/>
+    <path d="M800 465 L800 342"/>
   </g>
 
   <!-- Arrow labels -->
   <g font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="12" fill="#64748b">
     <text x="268" y="205">ssh -T</text>
     <text x="575" y="258">JSON-RPC</text>
-    <text x="852" y="380">local stdio</text>
-    <text x="880" y="185">write</text>
+    <text x="808" y="400">local stdio</text>
+    <text x="862" y="178">write</text>
   </g>
 
   <!-- flow between automation boxes -->
