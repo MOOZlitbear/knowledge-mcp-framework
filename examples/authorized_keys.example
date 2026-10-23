@@ -1,0 +1,11 @@
+# 每条公钥绑定一个 actor 与角色；restrict 关闭转发/PTY，command 强制只进 MCP。
+# 把 AAAAC3Nza... 换成真实的公钥；注释字段仅用于人工识别。
+
+# 只读设备
+restrict,command="/usr/local/bin/kb-entry laptop-ro reader" ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIExampleKeyForReadOnlyDevice0000000000000 laptop-ro
+
+# 可提交收件箱的设备
+restrict,command="/usr/local/bin/kb-entry laptop-dev contributor" ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIExampleKeyForContributorDevice000000000000 laptop-dev
+
+# 管理员/自动化，谨慎发放
+restrict,command="/usr/local/bin/kb-entry auto-curator curator" ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIExampleKeyForAutomation0000000000000000 auto-curator
