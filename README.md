@@ -4,6 +4,10 @@
 
 本项目只分享**框架与设计**，不含任何真实部署的地址、账号、密钥或业务数据。
 
+[English](README.en.md) · [架构图 SVG](docs/architecture.svg)
+
+![架构图](docs/architecture.svg)
+
 ---
 
 ## 1. 设计目标
@@ -190,9 +194,10 @@ Agent
 
 ```text
 .
-├── README.md
+├── README.md / README.en.md
 ├── SECURITY.md
 ├── docs/
+│   ├── architecture.svg
 │   └── automation.md
 ├── examples/
 │   ├── kb_client.py            # 最小 MCP 客户端（SSH stdio）

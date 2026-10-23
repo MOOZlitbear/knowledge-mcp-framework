@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Shared knowledge base over MCP and SSH</title>
+  <desc id="desc">Devices connect over SSH to a forced command, which starts an MCP server exposing a Markdown vault with version history. A scheduled automation generates merge proposals and applies them through the same MCP path.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+    <marker id="arrow-teal" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#0f766e"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="680" fill="#f8fafc"/>
+  <text x="40" y="54" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="26" font-weight="700" fill="#0f172a">Shared Knowledge Base — MCP over SSH</text>
+  <text x="40" y="82" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="14" fill="#64748b">per-device keys · role-based tools · CAS history · guarded automation</text>
+
+  <!-- Devices -->
+  <text x="40" y="128" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="13" font-weight="600" fill="#64748b">DEVICES</text>
+  <g font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <rect x="40" y="145" width="220" height="70" rx="10" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <text x="60" y="176" font-size="15" font-weight="600" fill="#0f172a">Agent A</text>
+    <text x="60" y="197" font-size="12" fill="#64748b">desktop · CLI</text>
+
+    <rect x="40" y="245" width="220" height="70" rx="10" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <text x="60" y="276" font-size="15" font-weight="600" fill="#0f172a">Agent B</text>
+    <text x="60" y="297" font-size="12" fill="#64748b">Kimi Code</text>
+
+    <rect x="40" y="345" width="220" height="70" rx="10" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <text x="60" y="376" font-size="15" font-weight="600" fill="#0f172a">Agent C</text>
+    <text x="60" y="397" font-size="12" fill="#64748b">Codex / DSH</text>
+  </g>
+
+  <!-- SSH -->
+  <rect x="320" y="200" width="240" height="140" rx="12" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="340" y="230" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="15" font-weight="700" fill="#0f766e">sshd</text>
+  <text x="340" y="254" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="12" fill="#334155">authorized_keys</text>
+  <text x="340" y="273" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="12" fill="#334155">forced command: actor + role</text>
+  <text x="340" y="298" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="12" fill="#64748b">restrict · no shell · no port</text>
+  <text x="340" y="317" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="12" fill="#64748b">no client-reported identity</text>
+
+  <!-- MCP -->
+  <rect x="620" y="200" width="220" height="140" rx="12" fill="#ffffff" stroke="#0f766e" stroke-width="1.5"/>
+  <text x="640" y="230" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="15" font-weight="700" fill="#0f766e">MCP server</text>
+  <text x="640" y="254" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="12" fill="#334155">stdio · per-connection</text>
+  <text x="640" y="273" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="12" fill="#334155">7 tools, role-gated</text>
+  <text x="640" y="298" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="12" fill="#64748b">reader / contributor /</text>
+  <text x="640" y="317" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="12" fill="#64748b">curator</text>
+
+  <!-- Authority -->
+  <text x="900" y="128" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="13" font-weight="600" fill="#64748b">AUTHORITY</text>
+  <rect x="900" y="145" width="260" height="90" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="920" y="176" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="15" font-weight="600" fill="#0f172a">Markdown vault</text>
+  <text x="920" y="198" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="12" fill="#64748b">single source of truth</text>
+  <text x="920" y="217" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="12" fill="#64748b">no two-way file sync</text>
+
+  <rect x="900" y="255" width="260" height="90" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="920" y="286" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="15" font-weight="600" fill="#0f172a">History</text>
+  <text x="920" y="308" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="12" fill="#64748b">SQLite · revisions · audit</text>
+  <text x="920" y="327" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="12" fill="#64748b">CAS before replace</text>
+
+  <!-- Automation -->
+  <text x="320" y="445" font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="13" font-weight="600" fill="#64748b">SCHEDULED AUTOMATION (OPTIONAL)</text>
+  <g font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif">
+    <rect x="320" y="465" width="190" height="80" rx="10" fill="#fffbeb" stroke="#f59e0b"/>
+    <text x="338" y="495" font-size="14" font-weight="600" fill="#92400e">Timer</text>
+    <text x="338" y="516" font-size="12" fill="#a16207">daily 22:00</text>
+
+    <rect x="545" y="465" width="190" height="80" rx="10" fill="#fffbeb" stroke="#f59e0b"/>
+    <text x="563" y="495" font-size="14" font-weight="600" fill="#92400e">LLM plan</text>
+    <text x="563" y="516" font-size="12" fill="#a16207">group + summarize</text>
+
+    <rect x="770" y="465" width="190" height="80" rx="10" fill="#fffbeb" stroke="#f59e0b"/>
+    <text x="788" y="495" font-size="14" font-weight="600" fill="#92400e">Apply</text>
+    <text x="788" y="516" font-size="12" fill="#a16207">append-only · CAS</text>
+
+    <rect x="995" y="465" width="165" height="80" rx="10" fill="#fffbeb" stroke="#f59e0b"/>
+    <text x="1013" y="495" font-size="14" font-weight="600" fill="#92400e">Logs</text>
+    <text x="1013" y="516" font-size="12" fill="#a16207">proposal + apply</text>
+
+    <rect x="320" y="585" width="840" height="55" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+    <text x="338" y="610" font-size="12" fill="#334155">Guardrails: PII skip · path whitelist · size caps · idempotent state · rollback via note_history</text>
+    <text x="338" y="628" font-size="12" fill="#64748b">The applier talks to the same MCP endpoint; the model never gets shell or direct file access.</text>
+  </g>
+
+  <!-- Arrows -->
+  <g stroke="#64748b" stroke-width="1.5" fill="none" marker-end="url(#arrow)">
+    <path d="M260 180 C 290 180, 290 260, 318 260"/>
+    <path d="M260 280 L318 280"/>
+    <path d="M260 380 C 290 380, 290 300, 318 300"/>
+    <path d="M560 270 L618 270"/>
+    <path d="M840 245 C 870 245, 870 190, 898 190"/>
+    <path d="M840 300 C 870 300, 870 300, 898 300"/>
+  </g>
+  <g stroke="#0f766e" stroke-width="1.5" fill="none" marker-end="url(#arrow-teal)" stroke-dasharray="5 4">
+    <path d="M865 465 L865 342"/>
+  </g>
+
+  <!-- Arrow labels -->
+  <g font-family="-apple-system, 'Segoe UI', 'Noto Sans SC', sans-serif" font-size="12" fill="#64748b">
+    <text x="268" y="205">ssh -T</text>
+    <text x="575" y="258">JSON-RPC</text>
+    <text x="852" y="380">local stdio</text>
+    <text x="880" y="185">write</text>
+  </g>
+
+  <!-- flow between automation boxes -->
+  <g stroke="#f59e0b" stroke-width="1.5" fill="none" marker-end="url(#arrow)">
+    <path d="M510 505 L543 505"/>
+    <path d="M735 505 L768 505"/>
+    <path d="M960 505 L993 505"/>
+  </g>
+</svg>
